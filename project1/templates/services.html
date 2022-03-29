@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block title %}Services{% endblock title %}
+
+{% block body %}
+This is Services Block  
+<div class='container'>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Streams</th>
+        <th scope="col">1</th>
+        <th scope="col">2</th>
+        <th scope="col">3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Beta-1</th>
+        <td>10.30.48.178</td>
+        <td>10.30.48.183</td>
+        <td>10.30.48.185</td>
+      </tr>
+      <tr>
+        <th scope="row">Beta-2</th>
+        <td>10.30.48.163</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th scope="row">Beta-3</th>
+        <td>10.60.48.106</td>
+        <td>10.60.48.105</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">1</th>
+        <th scope="col">2</th>
+        <th scope="col">3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Beta-1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">Beta-2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">Beta-3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>      
+    </tbody>    
+  </table>
+</div>
+
+<script>
+    $(document).ready(function(){
+      $("form").submit(function(){
+        alert("Submitted");
+      });
+    });
+</script>
+    <div class="container">
+    <form action="">
+      First name: <input type="text" name="FirstName" value="Mickey"><br>
+      Last name: <input type="text" name="LastName" value="Mouse"><br>
+      <input type="submit" value="Submit">
+    </form> 
+    </div
+
+{% comment %} <div class="contain" style="margin: 0px 260px">
+    <h1 class="text-center">Get Command</h1>
+    <form method="post" action="">
+  
+      {% csrf_token %}
+     
+      <div class="form-group">
+        <label for="buildno" class="form-label">Enter Build Number</label>
+        <input type="text" class="form-control" id="buildno" name="buildno" placeholder="Enter Build Number" />
+      </div>
+  
+      <div class="form-group">
+        <label for="ipaddress" class="form-label">Enter IP address</label>
+        <input type="text" class="form-control" id="email" name="ipaddress" placeholder="Enter IP address" />
+      </div></br>
+  
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form> {% endcomment %}
+  </div>
+
+
+
+
+
+
+
+{% endblock body %}
+
+
